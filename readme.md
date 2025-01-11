@@ -4,7 +4,11 @@
 
 **Solution:** Use a `@tool` script to edit the NodePaths referenced by the AnimationPlayer so they can be resolved again. This addon provides a basic UI to simplify the process.
 
-<video src="https://github.com/DangerousWhenWet/animation-node-redirector/raw/refs/heads/main/addons/animplayer-redirector/docs/demo-animation-redirector.mp4" controls loop autoplay muted></video>
+
+
+https://github.com/user-attachments/assets/20eb002a-dd70-4271-b85b-ff4648fc7c6c
+
+
 
 ### **Installation**
 
