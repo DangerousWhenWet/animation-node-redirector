@@ -4,8 +4,16 @@
 
 **Solution:** Use a `@tool` script to edit the NodePaths referenced by the AnimationPlayer so they can be resolved again. This addon provides a basic UI to simplify the process.
 
-<video src="addons/animplayer-redirector/docs/demo-animation-redirector.mp4" controls loop autoplay muted>
+<video controls loop autoplay muted>
+  <!-- Local file for when viewing the README locally -->
+  <source src="addons/animplayer-redirector/docs/demo-animation-redirector.mp4" type="video/mp4">
+  <!-- GitHub-hosted file for when the local file is not accessible -->
+  <source src="https://github.com/DangerousWhenWet/animation-node-redirector/raw/refs/heads/main/addons/animplayer-redirector/docs/demo-animation-redirector.mp4" type="video/mp4">
+  <!-- Fallback message if the browser won't play nice -->
+  Your browser does not support the video tag. 
+  You can <a href="https://github.com/DangerousWhenWet/animation-node-redirector/raw/refs/heads/main/addons/animplayer-redirector/docs/demo-animation-redirector.mp4">download the video here</a>.
 </video>
+
 
 ### **Installation**
 
