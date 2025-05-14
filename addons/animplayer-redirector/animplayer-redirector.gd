@@ -65,11 +65,10 @@ func identify_animated_nodes() -> Dictionary:
     var collector: Dictionary = {} # old_node_path -> { new_node_path, count_animations, count_tracks, is_resolvable }
     for animation_name in selected_player.get_animation_list():
         var animation: Animation = selected_player.get_animation(animation_name)
-        var has_counted_animation: bool = false
         for track_idx in animation.get_track_count():
             var track_path: NodePath = animation.track_get_path(track_idx)
             var target_node_path: NodePath = NodePath(track_path.get_concatenated_names())
-            if not has_counted_animation:
+            if target_node_path not in collector:
                 var is_resolvable = active_scene_root.get_node_or_null( target_node_path ) != null
                 var to_collect: Dictionary = {
                     "new_node_path": target_node_path,
@@ -78,7 +77,6 @@ func identify_animated_nodes() -> Dictionary:
                     "is_resolvable": is_resolvable
                 }
                 collector[target_node_path] = to_collect
-                has_counted_animation = true
             else:
                 collector[target_node_path]["count_tracks"] += 1
     
